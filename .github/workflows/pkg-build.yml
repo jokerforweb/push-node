@@ -5,8 +5,8 @@ name: Package into node binary
 
 on:
   push:
-    branches:
-      - master
+     branches:
+       - master
 
 jobs:
   publish-pkg:
