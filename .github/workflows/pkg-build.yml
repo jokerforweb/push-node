@@ -50,8 +50,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          tag_name: 1.0.1
-          name: 1.0.1
+          tag_name: 1.0.0
+          name: 1.0.0
           body: 修复变量取值bug
           draft: false
           prerelease: false
