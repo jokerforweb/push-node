@@ -4,9 +4,12 @@
 name: Package into node binary
 
 on:
-  push:
-     branches:
-       - master
+  workflow_dispatch:
+    inputs:
+      name:
+        description: '手动触发构建'
+        required: true
+        default: 'test'
 
 jobs:
   publish-pkg:
